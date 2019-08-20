@@ -10,7 +10,6 @@ public class ShowData {
         String sql = "SELECT * FROM EMP";
         Statement stmt = con.createStatement();
         ResultSet rs = stmt.executeQuery(sql);
-        
         while(rs.next()){
             System.out.println(rs.getString(1));
         }
